@@ -18,7 +18,7 @@ The second line contains 3 space-separated integers,\\(b_0), \\(b_1), and \\(b_2
 
 ## Constraints
 
-- \\(1<=(a_i)<=100)
+- $\(1<=(a_i)<=100)$
 - \\(1<=(b_i)<=100)
 
 ## Output Format
@@ -30,7 +30,7 @@ Print two space-separated integers denoting the respective comparison points ear
 5 6 7
 3 6 10
 
-##Sample Output
+## Sample Output
 
 1 1 
 ## Explanation
