@@ -30,21 +30,13 @@ Print the absolute difference between the sums of the matrix's two diagonals as 
 
 The primary diagonal is:
 
-11
-
-   5
-   
-     -12
+![](http://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%2011%20%26%5C%5C%20%26%5C%205%20%5C%5C%20%26%20-12%20%5Cend%7Balign*%7D)
      
 Sum across the primary diagonal: 11 + 5 - 12 = 4
 
 The secondary diagonal is:
 
-     4
-     
-   5
-   
-10
+![](http://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%26%20%5C%20%5C%204%20%5C%5C%20%265%20%5C%5C%2010%20%26%20%5Cend%7Balign*%7D)
 
 Sum across the secondary diagonal: 4 + 5 + 10 = 19 
 Difference: |4 - 19| = 15
