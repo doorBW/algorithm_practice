@@ -11,11 +11,13 @@ Print the integer sum of the elements in the array.
 
 ## Constraints 
 ![](http://latex.codecogs.com/gif.latex?1%5Cleq%20n%5Cleq%2010)
-![])(http://latex.codecogs.com/gif.latex?0%5Cleq%20ar%5Bi%5D%5Cleq%2010%5E%7B10%7D)
+
+![](http://latex.codecogs.com/gif.latex?0%5Cleq%20ar%5Bi%5D%5Cleq%2010%5E%7B10%7D)
 
 ## Sample Input
 
 5
+
 1000000001 1000000002 1000000003 1000000004 1000000005
 
 ## Output
