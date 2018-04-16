@@ -9,13 +9,17 @@ You will be given a ![](https://latex.codecogs.com/gif.latex?3%5Ctimes%203) matr
 For example, we start with the following matrix :
 
 5 3 4
+
 1 5 8
+
 6 4 2
 
 We can convert it to the following magic square:
 
 8 3 4
+
 1 5 9
+
 6 7 2
 
 This took three replacements at a cost of .
@@ -35,7 +39,9 @@ Print an integer denoting the minimum cost of turning matrix  into a magic squar
 ## Sample Input 0
 
 4 9 2
+
 3 5 7
+
 8 1 5
 
 ## Sample Output 0
@@ -49,7 +55,9 @@ If we change the bottom right value, ![](https://latex.codecogs.com/gif.latex?s%
 ## Sample Input 1
 
 4 8 2
+
 4 5 7
+
 6 1 6
 
 ## Sample Output 1
