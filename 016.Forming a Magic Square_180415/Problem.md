@@ -1,3 +1,5 @@
+# Forming a Magic Square
+
 We define a magic square to be an ![](https://latex.codecogs.com/gif.latex?n%5Ctimes%20n) matrix of distinct positive integers from 1 to ![](https://latex.codecogs.com/gif.latex?n%5E2) where the sum of any row, column, or diagonal of length  is always equal to the same number: the magic constant.
 
 You will be given a ![](https://latex.codecogs.com/gif.latex?3%5Ctimes%203) matrix s of integers in the inclusive range [1,9]. We can convert any digit a to any other digit b in the range [1,9] at cost of ![](https://latex.codecogs.com/gif.latex?%5Cleft%20%7Ca-b%20%5Cright%20%7C). Given s, convert it into a magic square at minimal cost. Print this cost on a new line.
@@ -18,43 +20,43 @@ We can convert it to the following magic square:
 
 This took three replacements at a cost of .
 
-##Input Format
+## Input Format
 
 Each of the lines contains three space-separated integers of row s[i].
 
-##Constraints
+## Constraints
 
 - ![](https://latex.codecogs.com/gif.latex?s%5Bi%5D%5Bj%5D%5Cin%20%5B1%2C9%5D)
 
-##Output Format
+## Output Format
 
 Print an integer denoting the minimum cost of turning matrix  into a magic square.
 
-##Sample Input 0
+## Sample Input 0
 
 4 9 2
 3 5 7
 8 1 5
 
-##Sample Output 0
+## Sample Output 0
 
 1
 
-##Explanation 0
+## Explanation 0
 
 If we change the bottom right value, ![](https://latex.codecogs.com/gif.latex?s%5B2%5D%5B2%5D), from 5 to 6 at a cost of ![](https://latex.codecogs.com/gif.latex?%5Cleft%20%7C5-6%20%5Cright%20%7C%20%3D%201), s becomes a magic square at the minimum possible cost.
 
-##Sample Input 1
+## Sample Input 1
 
 4 8 2
 4 5 7
 6 1 6
 
-##Sample Output 1
+## Sample Output 1
 
 4
 
-##Explanation 1
+## Explanation 1
 
 Using 0-based indexing, if we make
 
