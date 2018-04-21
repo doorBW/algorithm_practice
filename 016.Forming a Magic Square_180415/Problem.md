@@ -73,3 +73,7 @@ Using 0-based indexing, if we make
 - ![](https://latex.codecogs.com/gif.latex?s%5B2%5D%5B0%5D%5Crightarrow%208)at a cost of ![](https://latex.codecogs.com/gif.latex?%5Cleft%20%7C%208-6%20%5Cright%20%7C%3D2),
 
 then the total cost will be ![](https://latex.codecogs.com/gif.latex?1+1+2%3D4).
+
+
+### If you want to know more, go to this site(but only Korean)
+http://doorbw.tistory.com
