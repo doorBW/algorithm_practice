@@ -1,2 +1,2 @@
-# Algorithm Practice by HackerRank _ DoorBW
+# Algorithm Practice  by DoorBW
 
