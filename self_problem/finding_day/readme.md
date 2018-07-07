@@ -18,11 +18,11 @@ The years, months, and days given as input are actually the dates that exist.
 
 ### 제약조건 (Constraint)
 
-1 $\leq$  y$\leq$ 9999
+1![](https://latex.codecogs.com/gif.latex?%5Cleq)  y ![](https://latex.codecogs.com/gif.latex?%5Cleq) 9999
 
-1$\leq$ m$\leq$ 12
+1![](https://latex.codecogs.com/gif.latex?%5Cleq) m![](https://latex.codecogs.com/gif.latex?%5Cleq)12
 
-1$\leq$ d$\leq$ 31
+1![](https://latex.codecogs.com/gif.latex?%5Cleq) d ![](https://latex.codecogs.com/gif.latex?%5Cleq)31
 
 ### 테스트 방법 (How to test)
 
