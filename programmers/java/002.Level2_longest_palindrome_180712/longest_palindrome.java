@@ -12,6 +12,8 @@ class Solution
                 for(int j=i+1; j<len; j++){
                     try{
                         char left = s.charAt(i+1-j+i); // left 위치선정
+                        // left 위치 선정은 약간 까다로울 수 있음.
+                        // 직접 연습장에 예시를 하나 두고 i와 j값을 변화시키며 확인해보는 것이 좋음
                         char right = s.charAt(j);
                         if(left == right){
                             temp_len += 2;
@@ -33,7 +35,8 @@ class Solution
             for(int j=i-1; j>=0; j--){
                 try{
                     char left = s.charAt(j);
-                    char right = s.charAt(i+i-j);
+                    char right = s.charAt(i+i-j); // right 위치선정
+                    // 이 또한 직접 예시를 하나 두고 i와 j값을 변화시키며 확인해보는 것이 좋음
                     if(left == right){
                         temp_len += 2;
                     }else{
