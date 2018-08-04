@@ -4,7 +4,7 @@
 def your_answer(y,m,d):
 	# 하단에 코드를 작성하세요
 	# write your code
-
+	
 	day_dic = {0:'MON', 1:'TUE', 2:'WED', 3:'THU', 4:'FRI', 5:'SAT', 6:'SUN' }
 	standard_year = [31,28,31,30,31,30,31,31,30,31,30,31]
 
