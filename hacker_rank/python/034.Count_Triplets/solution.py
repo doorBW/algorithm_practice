@@ -9,28 +9,44 @@ import sys
 # Complete the countTriplets function below.
 def countTriplets(arr, r):
     cnt = 0
-    arr = list(sorted(arr))
-    if arr[0] == arr[-1]:
-        return int(len(arr) * (len(arr)-1) * (len(arr)-2) / 6)
+    second_dic = {}
+    third_dic = {}
+    for val in arr:
+        if val in third_dic.keys():
+            cnt += third_dic[val]
+            
+        if val in second_dic.keys():
+            if val*r in third_dic.keys():
+                third_dic[val*r] += second_dic[val]
+            else: third_dic[val*r] = second_dic[val]
+        
+        if val*r in second_dic.keys():
+            second_dic[val*r] += 1
+        else: second_dic[val*r] = 1
+    return cnt
 
-    arr_set = set(arr)
-    arr_duplicated = list(sorted(list(arr_set)))
+    # arr = list(sorted(arr))
+    # if arr[0] == arr[-1]:
+    #     return int(len(arr) * (len(arr)-1) * (len(arr)-2) / 6)
+
+    # arr_set = set(arr)
+    # arr_duplicated = list(sorted(list(arr_set)))
         
-    for first_num in arr_duplicated:
-        first_num_cnt = arr.count(first_num)
+    # for first_num in arr_duplicated:
+    #     first_num_cnt = arr.count(first_num)
         
-        second_num = first_num * r
-        second_num_cnt = arr.count(second_num)
-        if second_num_cnt == 0:
-            continue
+    #     second_num = first_num * r
+    #     second_num_cnt = arr.count(second_num)
+    #     if second_num_cnt == 0:
+    #         continue
     
-        third_num = second_num * r
-        third_num_cnt = arr.count(third_num)
-        if third_num_cnt == 0:
-            continue
+    #     third_num = second_num * r
+    #     third_num_cnt = arr.count(third_num)
+    #     if third_num_cnt == 0:
+    #         continue
         
-        cnt += first_num_cnt * second_num_cnt * third_num_cnt
-
+    #     cnt += first_num_cnt * second_num_cnt * third_num_cnt
+    # return cnt
 
     # for idx in range(len(arr)-2):
     #     second_list = [-1]
@@ -50,7 +66,7 @@ def countTriplets(arr, r):
     #                     break
     #         else:
     #             break
-    return cnt
+    # return cnt
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
