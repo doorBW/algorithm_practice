@@ -6,20 +6,54 @@ import random
 import re
 import sys
 
+def get_median(counts, mids):
+    res = []
+    for mid in mids:
+        gone = 0
+        for i, v in enumerate(counts):
+            gone += v
+            if gone >= mid:
+                res.append(i)
+                break
+    return sum(res) / len(res)
+
+
 # Complete the activityNotifications function below.
 def activityNotifications(expenditure, d):
-    m = 0
-    c = 0
-    for i,v in enumerate(expenditure):
-        if i < d:
-            m += v
-        else:
-            l = expenditure[i-d+1]
-            if v >= 2*m/d:
-                c += 1
-            m += (v-l)
+    alerts = 0
+    counts = [0] * 201
 
-    return c
+    if d % 2 == 1:
+        mids = [d // 2 + 1]
+    else:
+        mids = [d // 2, d // 2 + 1]
+
+    for v in expenditure[:d]:
+        counts[v] += 1
+
+    for i, exp in enumerate(expenditure[d:]):
+        median = get_median(counts, mids)
+
+        if exp >= 2 * median:
+            print(exp,median)
+            alerts += 1
+        old_value = expenditure[i]
+        counts[old_value] -= 1
+        counts[exp] += 1
+  
+    return alerts
+    # m = 0
+    # c = 0
+    # for i,v in enumerate(expenditure):
+    #     if i < d:
+    #         m += v
+    #     else:
+    #         l = expenditure[i-d]
+    #         if v >= 2*(m/d):
+    #             c += 1
+    #         m += (v-l)
+
+    # return c
 
         
 
